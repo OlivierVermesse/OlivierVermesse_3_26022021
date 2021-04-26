@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-dark;
+    color:$color-font-footer;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &__logo{
+        color: $color-font-footer;
+        font-family: shrikhandregular;
+        font-size: 2em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__proposer{
+        display: flex;
+        align-items: center;
+    }
+    &__partenaire{
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+@import "./main.scss";
+
+.test{
+    font-family: robotoregular;
+    &1{
+        font-family: robotobold;
+        color: red;
+    }
+    &2{
+        font-family: shrikhandregular;
+        color: $color-prim;
+    }
+    &3{
+        font-family: robotoblack;
+        color: $color-sec;
+    }
+}
+
+

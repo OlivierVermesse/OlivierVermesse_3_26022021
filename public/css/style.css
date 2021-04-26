@@ -1,3 +1,92 @@
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"), url("../font/shrikhand-regular-webfont.woff") format("woff"), url("../font/Shrikhand-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("../font/roboto-regular-webfont.woff2") format("woff2"), url("../font/roboto-regular-webfont.woff") format("woff"), url("../font/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoblack";
+  src: url("../font/roboto-black-webfont.woff2") format("woff2"), url("../font/roboto-black-webfont.woff") format("woff"), url("../font/Roboto-black.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("../font/roboto-bold-webfont.woff2") format("woff2"), url("../font/roboto-bold-webfont.woff") format("woff"), url("../font/Roboto-bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+#page {
+  width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+}
 
+p {
+  font-family: robotoregular;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #373737;
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer__logo {
+  color: white;
+  font-family: shrikhandregular;
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer__proposer {
+  display: flex;
+  align-items: center;
+}
+.footer__partenaire {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.test {
+  font-family: robotoregular;
+}
+.test1 {
+  font-family: robotobold;
+  color: red;
+}
+.test2 {
+  font-family: shrikhandregular;
+  color: #9356DC;
+}
+.test3 {
+  font-family: robotoblack;
+  color: #FF79DA;
+}
 
 /*# sourceMappingURL=style.css.map */

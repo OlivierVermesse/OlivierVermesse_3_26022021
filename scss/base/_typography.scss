@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('../font/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('../font/shrikhand-regular-webfont.woff') format('woff'),
+         url('../font/Shrikhand-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto-regular-webfont.woff') format('woff'),
+         url('../font/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../font/roboto-black-webfont.woff2') format('woff2'),
+         url('../font/roboto-black-webfont.woff') format('woff'),
+         url('../font/Roboto-black.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+//voir si utilisée
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto-bold-webfont.woff2') format('woff2'),
+         url('../font/roboto-bold-webfont.woff') format('woff'),
+         url('../font/Roboto-bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+//vérifier si a été utilisée
+
