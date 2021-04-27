@@ -1,19 +1,12 @@
 @import "./main.scss";
 
-.test{
-    font-family: robotoregular;
-    &1{
+
+#explore{
+    &__teasing span{
+        font-size: 1.5em;
         font-family: robotobold;
-        color: red;
-    }
-    &2{
-        font-family: shrikhandregular;
-        color: $color-prim;
-    }
-    &3{
-        font-family: robotoblack;
-        color: $color-sec;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
     }
 }
-
-

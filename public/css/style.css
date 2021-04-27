@@ -27,9 +27,6 @@
   margin-left: auto;
   margin-right: auto;
   border: 1px solid grey;
-}
-
-p {
   font-family: robotoregular;
 }
 
@@ -37,12 +34,14 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #373737;
+  background-color: #4A4A4A;
   color: white;
   padding-left: 20px;
   padding-top: 10px;
@@ -59,9 +58,38 @@ img {
   display: flex;
   align-items: center;
 }
+.footer__proposer span {
+  padding-left: 6px;
+}
 .footer__partenaire {
   display: flex;
   align-items: center;
+}
+
+#explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  border: 1px solid red;
+}
+#explore__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: robotoregular;
+  height: 40px;
+  width: 100%;
+  background-color: #e3e3e3;
+}
+#explore input {
+  font-family: robotoregular;
+  background-color: #e3e3e3;
+  border: none;
+}
+#explore input::placeholder {
+  color: black;
+  font-weight: bold;
 }
 
 a {
@@ -73,20 +101,21 @@ a {
   margin-right: 20px;
 }
 
-.test {
-  font-family: robotoregular;
+#explore__btn_submit {
+  height: 30px;
+  width: 200px;
+  margin-top: 15px;
+  background-color: #FF79DA;
+  color: white;
+  border-radius: 30px 30px 30px 30px;
 }
-.test1 {
+
+#explore__teasing span {
+  font-size: 1.5em;
   font-family: robotobold;
-  color: red;
-}
-.test2 {
-  font-family: shrikhandregular;
-  color: #9356DC;
-}
-.test3 {
-  font-family: robotoblack;
-  color: #FF79DA;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,17 +13,41 @@
 
 <body>
 	<div id=page>
-<div class= test0>test police 0</div>
-<div class= test2>test shrikhandregular</div>		
-<div class= test>test police robotoregular</div>
-<div class= test1>test police robotobold</div>
-<div class= test3>test police robotoblack</div>
-*************************************************
 		<header>
 			<!-- <div class="logo">test</div> -->
 			<!-- <img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" /> -->
 			<img src="public/img/logo/ohmyfood.svg" alt="logo ohmyfood" title="logo ohmyfood" />
 		</header>
+
+		<section id="explore">
+			<div id="explore__search">
+				<div class='icon'>
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<form method="post" action="adresse.php">
+					<input type="search" name="search" id="search" size="20" placeholder="Paris, Belleville" id="explore__city"/>
+				</form>
+			</div>
+			<div id="explore__teasing">
+				<span>Réservez le menu qui vous convient</span> <br/> Découvrez des restaurants d'exception, sélectionnés par nos soins.
+			</div>
+			<div id="explore__btn_submit">
+				<form method="post" action="adresse.php" >
+					<input type="submit" name="submit" id="submit" value="Explorer nos restaurants" />
+				</form>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
 
 		
 		<footer>
@@ -38,7 +62,7 @@
 					<div class= "icon">
 						<i class="fas fa-utensils"></i>
 					</div>    			
-					<p><a href="x.html" title= "proposer un restaurant" target="_blank"> Proposer un restaurant</a></p>   
+					<p><a href="x.html" title= "proposer un restaurant" target="_blank"> <span>Proposer un restaurant</span></a></p>   
 				</div>
 
 				<div class="footer__partenaire">
@@ -49,7 +73,7 @@
 				</div>
 
 				<div class="footer__mentions">
-					<p><a href="x.html" title= "mentions legales" target="_blank"> mentions légales</a></p>
+					<p><a href="x.html" title= "mentions legales" target="_blank"> Mentions légales</a></p>
 				</div>
 
 				<div class="footer__contact">

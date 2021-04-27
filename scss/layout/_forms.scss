@@ -1,0 +1,35 @@
+#explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border: 1px solid red;
+    &__search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: robotoregular;
+        height: 40px;
+        width: 100%;
+        background-color:$color-bg_light;
+    }
+    input{
+        font-family: robotoregular;
+        background-color:$color-bg_light;
+        border: none;
+        &::placeholder{
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+    
+    
+    
+    // }
+
+    
+        
+    
+// }

@@ -1,6 +1,6 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 // @import "./utils/functions";
-// @import "./utils/mixins";
 // @import "./utils/extensions";
 
 // @import "./base/base";
@@ -10,13 +10,14 @@
 
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/forms";
 @import "./layout/navigation";
 // @import "./layout/container";
-// @import "./layout/form";
 
 @import "./components/icones";
-// @import "./components/buttons";
+@import "./components/buttons";
 
+// @import "./pages/home";
 // @import "./pages/work";
 // @import "./pages/about";
 // @import "./pages/project";

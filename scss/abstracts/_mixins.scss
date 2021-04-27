@@ -1,0 +1,10 @@
+@mixin box-shadow{
+    box-shadow: .55rem .55rem #15DEA5;
+    box-shadow: 15px, 15px, 15px,15px $color-lighten;
+    }
+
+@mixin bg_lighten{
+    background-color: $color-lighten;
+}
+
+//a utiliser avec >>>>   &__heading {        @include heading-shadow;
