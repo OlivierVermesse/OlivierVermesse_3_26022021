@@ -3,6 +3,7 @@ $color-sec:#FF79DA;
 $color-ter:#99E2D0;
 $color-bg: #4A4A4A;
 $color-bg_dark: darken($color-bg,10%);
+$color-bg_mid: lighten($color-bg, 65%);
 $color-bg_light: lighten($color-bg, 60%);
 $color-bg_font:white;
 $border-radius: 30px 30px 30px 30px;

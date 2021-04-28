@@ -1,3 +1,16 @@
-.icon{
-    margin-right: 20px;
+.explore__search,.footer__propose, .footer__partner{
+    &--icon{
+        margin-right: 15px;
+        span{
+            margin-left: 3px;
+            margin-right: 3px
+        }
+    }
+}
+
+.fonctionnement__choice, .fonctionnement__menu, .fonctionnement__enjoy{
+    &--icon{
+        color:$color-sec;
+        margin-right: 20px;
+    }
 }

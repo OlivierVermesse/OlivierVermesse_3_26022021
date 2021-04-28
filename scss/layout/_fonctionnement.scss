@@ -1,0 +1,13 @@
+#fonctionnement{
+    display: flex;
+    flex-direction: column;
+    &__choice{
+        display: flex;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__enjoy{
+        display: flex;
+    }
+}

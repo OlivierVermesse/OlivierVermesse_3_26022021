@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.01,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Accueil - Ohmyfood</title>
 	<meta name="description" content="personnalisez, commandez et gangnez du temps grâce à vos Restaurants Ohmyfood">
 	<link rel="stylesheet" href="public/css/style.css">
@@ -12,84 +12,100 @@
 </head>
 
 <body>
-	<div id=page>
-		<header>
-			<!-- <div class="logo">test</div> -->
-			<!-- <img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" /> -->
-			<img src="public/img/logo/ohmyfood.svg" alt="logo ohmyfood" title="logo ohmyfood" />
-		</header>
+	<header>
+		<img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg"/>
+	</header>
 
-		<section id="explore">
-			<div id="explore__search">
-				<div class='icon'>
+	<section id="explore">
+		<div id="explore__search">
+			<form method="post" action="adresse.php"></form>
+				<div class='explore__search--icon'>
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<form method="post" action="adresse.php">
-					<input type="search" name="search" id="search" size="20" placeholder="Paris, Belleville" id="explore__city"/>
-				</form>
+				<input type="search" name="search" id="search" size="20" placeholder="Paris, Belleville" id="explore__city"/>
+		</div>
+		<div id="explore__title">
+			Réservez le menu qui vous convient
+		</div>
+		<div id="explore__teasing">
+			Découvrez des restaurants d'exception, sélectionnés par nos soins.
+		</div>
+		<div>
+		<button type="button" class="btn">Explorer nos restaurants</button>
+		</div>
+			</form>
+		</div>
+	</section>
+
+		<section id="fonctionnement">
+			<p>Fonctionnement</p>
+			<div id="fonctionnement__choice">
+				<div class="fonctionnement__choice__number">
+					1
+				</div>
+				<div class="fonctionnement__choice__icon">
+					<i class="fas fa-mobile-alt"></i>
+				</div>
+				<div class= "fonctionnement__choice__desc">
+					Choisissez un restaurant
+				</div>
 			</div>
-			<div id="explore__teasing">
-				<span>Réservez le menu qui vous convient</span> <br/> Découvrez des restaurants d'exception, sélectionnés par nos soins.
+			<div id="fonctionnement__menu">
+				<div class="fonctionnement__menu__number">
+					2
+				</div>
+				<div class="fonctionnement__menu__icon">
+					<i class="fas fa-list-ul"></i>
+				</div>
+				<div class= "fonctionnement__menu__desc">
+					Composez votre menu
+				</div>
 			</div>
-			<div id="explore__btn_submit">
-				<form method="post" action="adresse.php" >
-					<input type="submit" name="submit" id="submit" value="Explorer nos restaurants" />
-				</form>
+			<div id="fonctionnement__enjoy">
+				<div class="enjoy">
+					3
+				</div>
+				<div class="fonctionnement__enjoy__icon">
+					<i class="fas fa-store"></i>
+				</div>
+				<div class= "fonctionnement__enjoy__desc">
+					Dégustez au restaurant
+				</div>
 			</div>
+
 		</section>
-
-
-
-
-
-
-
-
-
-
-
-
 		
-		<footer>
-			<div class="footer">
-				<div class="footer__logo">
-					<!-- <img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" /> -->
-					<!-- <img src="public/img/logo/ohmyfood.svg" alt="logo ohmyfood" title="logo ohmyfood" /> -->
-					ohmyfood
-				</div>
+	<footer>
 
-				<div class="footer__proposer">
-					<div class= "icon">
-						<i class="fas fa-utensils"></i>
-					</div>    			
-					<p><a href="x.html" title= "proposer un restaurant" target="_blank"> <span>Proposer un restaurant</span></a></p>   
-				</div>
-
-				<div class="footer__partenaire">
-					<div class= "icon">
-						<i class="fas fa-hands-helping"></i>
-					</div>
-					<p><a href="x.html" title= "devenir partenaire" target="_blank"> Devenir partenaire</a></p>
-				</div>
-
-				<div class="footer__mentions">
-					<p><a href="x.html" title= "mentions legales" target="_blank"> Mentions légales</a></p>
-				</div>
-
-				<div class="footer__contact">
-					<p><a href="mailto:Olivier.vermesse74@gmail.com" title= "Contact" target="_blank"> Contact</a></p>
-				</div>
+		<div class="footer">
+			<div class="footer__logo">
+				<!-- <img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" /> -->
+				<!-- <img src="public/img/logo/ohmyfood.svg" alt="logo ohmyfood" title="logo ohmyfood" /> -->
+				ohmyfood
 			</div>
-		</footer>
-</div>
 
+			<div class="footer__propose">
+				<div class= "footer__propose--icon">
+					<span><i class="fas fa-utensils"></i></span>
+				</div>    			
+				<p><a href="x.html" title= "proposer un restaurant" target="_blank" class="footer__propose--title"> Proposer un restaurant</a></p>   
+			</div>
 
+			<div class="footer__partner">
+				<div class= "footer__partner--icon">
+					<i class="fas fa-hands-helping"></i>
+				</div>
+				<p><a href="x.html" title= "devenir partenaire" target="_blank" class="footer__partner--title"> Devenir partenaire</a></p>
+			</div>
 
+			<div class="footer__mentions">
+				<p><a href="x.html" title= "mentions legales" target="_blank" class="footer__mentions--title"> Mentions légales</a></p>
+			</div>
 
-
-
-
-
-
-	</body>
+			<div class="footer__contact">
+				<p><a href="mailto:Olivier.vermesse74@gmail.com" title= "Contact" target="_blank" class="footer__contact--title"> Contact</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
 </html>

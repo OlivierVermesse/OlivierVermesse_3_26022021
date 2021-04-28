@@ -1,27 +1,21 @@
 .footer{
-    display: flex;
-    flex-direction: column;
-    background-color: $color-bg;
-    color:$color-bg_font;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    &__logo{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-bg;
+        color:$color-bg_font;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        &__logo{
         color: $color-bg_font;
         font-family: shrikhandregular;
-        font-size: 2em;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        font-size: 1.3em;
+        padding-bottom: 20px;
     }
-    &__proposer{
+    &__propose, &__partner, &__mentions, &__contact{
         display: flex;
         align-items: center;
-        span{
-            padding-left: 6px;
-        }
-    }
-    &__partenaire{
-        display: flex;
-        align-items: center;
+        height: auto;
     }
 }
