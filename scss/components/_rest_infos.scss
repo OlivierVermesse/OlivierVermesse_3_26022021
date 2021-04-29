@@ -1,0 +1,12 @@
+.rest_infos{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    background-color: $color-font;
+    border-radius: $radius-corner-bottom;
+    span{
+        font-family: robotobold;
+        }
+    }

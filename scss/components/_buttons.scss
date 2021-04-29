@@ -3,10 +3,21 @@
     width: 200px;
     margin-top: 15px;
     margin-bottom: 30px;
-    // background-color: $color-sec;
     background: linear-gradient($color-sec, $color-prim);
-    color: $color-bg_font;
+    color: $color-font;
     border-radius: $radius-round;
     border:none;
     }
 
+.tag_new{
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: $color-ter;
+    color: $color-ter-dark;
+    font-family: robotobold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

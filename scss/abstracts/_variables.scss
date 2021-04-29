@@ -1,14 +1,23 @@
 $color-prim: #9356DC;
 $color-sec:#FF79DA;
 $color-ter: #99E2D0;
+$color-bg: #4A4A4A;
 
+//bouton NEW
+$color-ter-dark:darken(#99E2D0,50%);
+
+//bouton NEW & block Footer
+$color-font:white;
+
+//BG Accueil > block Explore & Fonctionnement
+$color-bg_light: lighten($color-bg, 60%);
 $color-select: #E3D2DE;
 
-$color-bg: #4A4A4A;
-$color-bg_dark: darken($color-bg,10%);
+//BG Accueil > block Explore & Restaurants &Box shadow
 $color-bg_mid: lighten($color-bg, 65%);
-$color-bg_light: lighten($color-bg, 60%);
-$color-bg_font:white;
 
 $radius-round: 30px 30px 30px 30px;
+$radius-corner-top: 15px 15px 0 0;
+$radius-corner-bottom: 0 0 15px 15px;
 $radius-corner: 15px 15px 15px 15px;
+

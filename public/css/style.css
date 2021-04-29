@@ -22,11 +22,24 @@
   font-weight: normal;
   font-style: normal;
 }
+h1 {
+  font-size: 1.5em;
+  font-family: robotobold;
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: robotobold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 body {
   max-width: 767px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
   font-family: robotoregular;
 }
 
@@ -90,12 +103,6 @@ a {
 #explore__search {
   background-color: #e3e3e3;
 }
-#explore h2 {
-  font-size: 1.5em;
-  font-family: robotobold;
-  display: block;
-  text-align: center;
-}
 #explore__teasing {
   display: block;
   text-align: center;
@@ -104,12 +111,6 @@ a {
 
 #fonctionnement {
   padding-left: 20px;
-}
-#fonctionnement h2 {
-  font-size: 1.5em;
-  font-family: robotobold;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 #fonctionnement__criteria {
   height: 200px;
@@ -150,6 +151,42 @@ a {
   background-color: #E3D2DE;
 }
 
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#restaurants__palette {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+#restaurants__enchantee {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+#restaurants__francaise {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+#restaurants__delice {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+
 .explore__search--icon, .footer__propose--icon, .footer__partner--icon {
   margin-right: 15px;
 }
@@ -185,6 +222,50 @@ a {
   color: white;
   border-radius: 30px 30px 30px 30px;
   border: none;
+}
+
+.tag_new {
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  font-family: robotobold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cont__picture {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+.cont__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 15px 15px 0 0;
+}
+
+.rest_infos {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+.rest_infos span {
+  font-family: robotobold;
+}
+
+.tag_love {
+  align-self: center;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

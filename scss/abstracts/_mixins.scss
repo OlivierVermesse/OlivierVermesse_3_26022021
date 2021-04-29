@@ -11,4 +11,10 @@
     border-radius: $radius-corner;
     }
 
-
+@mixin rest_list{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: $radius-corner;
+    }
