@@ -82,30 +82,72 @@ a {
 }
 
 #explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f0f0f0;
 }
 #explore__search {
-  align-items: center;
   background-color: #e3e3e3;
 }
-#explore__title {
+#explore h2 {
   font-size: 1.5em;
   font-family: robotobold;
   display: block;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 15px;
 }
 #explore__teasing {
   display: block;
   text-align: center;
   padding-bottom: 15px;
 }
-#explore .btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+
+#fonctionnement {
+  padding-left: 20px;
+}
+#fonctionnement h2 {
+  font-size: 1.5em;
+  font-family: robotobold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#fonctionnement__criteria {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+#fonctionnement__criteria__choice {
+  display: flex;
+  height: 50px;
+  margin-right: 20px;
+  align-items: center;
+  font-family: robotobold;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px #f0f0f0, -3px 0px #f0f0f0;
+  background-color: #e3e3e3;
+}
+#fonctionnement__criteria__menu {
+  display: flex;
+  height: 50px;
+  margin-right: 20px;
+  align-items: center;
+  font-family: robotobold;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px #f0f0f0, -3px 0px #f0f0f0;
+  background-color: #e3e3e3;
+}
+#fonctionnement__criteria__enjoy {
+  display: flex;
+  height: 50px;
+  margin-right: 20px;
+  align-items: center;
+  font-family: robotobold;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px #f0f0f0, -3px 0px #f0f0f0;
+  background-color: #E3D2DE;
 }
 
 .explore__search--icon, .footer__propose--icon, .footer__partner--icon {
@@ -116,9 +158,22 @@ a {
   margin-right: 3px;
 }
 
-.fonctionnement__choice--icon, .fonctionnement__menu--icon, .fonctionnement__enjoy--icon {
-  color: #FF79DA;
+.fonctionnement__criteria__choice--icon, .fonctionnement__criteria__menu--icon, .fonctionnement__criteria__enjoy--icon {
+  margin-left: 30px;
   margin-right: 20px;
+}
+.fonctionnement__criteria__choice--icon span, .fonctionnement__criteria__menu--icon span, .fonctionnement__criteria__enjoy--icon span {
+  color: #9356DC;
+}
+.fonctionnement__criteria__choice--number, .fonctionnement__criteria__menu--number, .fonctionnement__criteria__enjoy--number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  left: -15px;
 }
 
 .btn {
@@ -126,7 +181,7 @@ a {
   width: 200px;
   margin-top: 15px;
   margin-bottom: 30px;
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border-radius: 30px 30px 30px 30px;
   border: none;

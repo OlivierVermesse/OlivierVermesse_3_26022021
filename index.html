@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.01,maximum-scale=1,user-scalable=no,minimal-ui">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=no">
 	<title>Accueil - Ohmyfood</title>
 	<meta name="description" content="personnalisez, commandez et gangnez du temps grâce à vos Restaurants Ohmyfood">
 	<link rel="stylesheet" href="public/css/style.css">
@@ -13,7 +13,7 @@
 
 <body>
 	<header>
-		<img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg"/>
+		<img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" alt="logo"/>
 	</header>
 
 	<section id="explore">
@@ -22,10 +22,10 @@
 				<div class='explore__search--icon'>
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<input type="search" name="search" id="search" size="20" placeholder="Paris, Belleville" id="explore__city"/>
+				<input type="search" name="search" id="explore__city" size="20" placeholder="Paris, Belleville"/>
 		</div>
 		<div id="explore__title">
-			Réservez le menu qui vous convient
+			<h2>Réservez le menu qui vous convient</h2>
 		</div>
 		<div id="explore__teasing">
 			Découvrez des restaurants d'exception, sélectionnés par nos soins.
@@ -33,47 +33,48 @@
 		<div>
 		<button type="button" class="btn">Explorer nos restaurants</button>
 		</div>
-			</form>
-		</div>
 	</section>
 
-		<section id="fonctionnement">
-			<p>Fonctionnement</p>
-			<div id="fonctionnement__choice">
-				<div class="fonctionnement__choice__number">
+	<section id="fonctionnement">
+		<div id="fonctionnement__title">
+			<h2>Fonctionnement</h2>
+		</div>
+		<div id=fonctionnement__criteria>
+			<div id="fonctionnement__criteria__choice">
+				<div class="fonctionnement__criteria__choice--number">
 					1
 				</div>
-				<div class="fonctionnement__choice__icon">
+				<div class="fonctionnement__criteria__choice--icon">
 					<i class="fas fa-mobile-alt"></i>
 				</div>
-				<div class= "fonctionnement__choice__desc">
+				<div class= "fonctionnement__criteria__choice--desc">
 					Choisissez un restaurant
 				</div>
 			</div>
-			<div id="fonctionnement__menu">
-				<div class="fonctionnement__menu__number">
+			<div id="fonctionnement__criteria__menu">
+				<div class="fonctionnement__criteria__menu--number">
 					2
 				</div>
-				<div class="fonctionnement__menu__icon">
+				<div class="fonctionnement__criteria__menu--icon">
 					<i class="fas fa-list-ul"></i>
 				</div>
-				<div class= "fonctionnement__menu__desc">
+				<div class= "fonctionnement__criteria__menu--desc">
 					Composez votre menu
 				</div>
 			</div>
-			<div id="fonctionnement__enjoy">
-				<div class="enjoy">
+			<div id="fonctionnement__criteria__enjoy">
+				<div class="fonctionnement__criteria__enjoy--number">
 					3
 				</div>
-				<div class="fonctionnement__enjoy__icon">
-					<i class="fas fa-store"></i>
+				<div class="fonctionnement__criteria__enjoy--icon">
+					<span><i class="fas fa-store"></i></span>
 				</div>
-				<div class= "fonctionnement__enjoy__desc">
+				<div class= "fonctionnement__criteria__enjoy--desc">
 					Dégustez au restaurant
 				</div>
 			</div>
-
-		</section>
+		</div>
+	</section>
 		
 	<footer>
 

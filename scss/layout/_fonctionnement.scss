@@ -1,13 +1,32 @@
 #fonctionnement{
+    h2{
+        font-size: 1.5em;
+        font-family: robotobold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    padding-left: 20px;
+    &__criteria{
+    height: 200px;
     display: flex;
     flex-direction: column;
-    &__choice{
-        display: flex;
-    }
-    &__menu{
-        display: flex;
-    }
-    &__enjoy{
-        display: flex;
+    justify-content: space-between;
+    position:relative;
+    margin-bottom: 20px;    
+        &__choice{
+            @include fct_choice;
+            @include box-shadow;
+            background-color: $color-bg_light;
+        }
+        &__menu{
+            @include fct_choice;
+            @include box-shadow;
+            background-color: $color-bg_light;
+        }
+        &__enjoy{
+            @include fct_choice;
+            @include box-shadow;
+            background-color: $color-select;
+        }
     }
 }

@@ -1,9 +1,14 @@
 @mixin box-shadow{
-    box-shadow: 15px, 15px, 15px,15px $color-lighten;
+    box-shadow: 3px 3px $color-bg_mid, -3px 0px $color-bg_mid;
     }
 
-@mixin bg_lighten{
-    background-color: $color-lighten;
-}
+@mixin fct_choice{
+    display: flex;
+    height: 50px;
+    margin-right: 20px;
+    align-items: center;
+    font-family: robotobold;
+    border-radius: $radius-corner;
+    }
 
-//a utiliser avec >>>>   &__heading {        @include heading-shadow;
+

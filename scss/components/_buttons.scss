@@ -3,9 +3,10 @@
     width: 200px;
     margin-top: 15px;
     margin-bottom: 30px;
-    background-color: $color-sec;
+    // background-color: $color-sec;
+    background: linear-gradient($color-sec, $color-prim);
     color: $color-bg_font;
-    border-radius: $border-radius;
+    border-radius: $radius-round;
     border:none;
     }
 
