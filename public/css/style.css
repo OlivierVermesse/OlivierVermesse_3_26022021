@@ -311,9 +311,22 @@ a {
   font-family: robotobold;
 }
 
-.tag_love {
+.tag_like {
   align-self: center;
   padding-right: 20px;
+  position: relative;
+  display: flex;
+}
+
+.fa {
+  transition-duration: 0.25s;
+  position: absolute;
+  color: #9356DC;
+  z-index: 1;
+  opacity: 0;
+}
+.fa:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
