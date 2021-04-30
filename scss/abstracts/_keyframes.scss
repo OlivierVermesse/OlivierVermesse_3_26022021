@@ -1,0 +1,13 @@
+//spinner
+@keyframes slide{
+	to { margin-left: 90%; }
+}
+
+@keyframes loss {
+	0%, 80%
+		{opacity:1;
+	}
+	100%
+		{opacity:0;
+	}
+}

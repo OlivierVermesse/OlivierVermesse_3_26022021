@@ -3,6 +3,10 @@ $color-sec:#FF79DA;
 $color-ter: #99E2D0;
 $color-bg: #4A4A4A;
 
+$color-prim-dark:darken($color-prim, 20%);
+$color-sec-dark:darken($color-sec, 20%);
+
+
 //bouton NEW
 $color-ter-dark:darken(#99E2D0,50%);
 
@@ -17,7 +21,12 @@ $color-select: #E3D2DE;
 $color-bg_mid: lighten($color-bg, 65%);
 
 $radius-round: 30px 30px 30px 30px;
+$radius50: 50%;
 $radius-corner-top: 15px 15px 0 0;
 $radius-corner-bottom: 0 0 15px 15px;
 $radius-corner: 15px 15px 15px 15px;
 
+//spinner
+$bar-duration:1000ms;
+$bar-delay:150ms;
+$total-bar-delay: $bar-duration + $bar-delay;

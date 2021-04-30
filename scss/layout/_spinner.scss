@@ -1,0 +1,33 @@
+.spinner-block{
+    &__bar{
+	font-size: 20px;
+	width: 250px;
+	height: 25px;
+	border: 3px solid $color-prim;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 7px;
+	position: relative;
+	background-color: $color-font;
+    opacity:0;
+    animation: 5s loss 1 ;
+    :after{
+    content: "Chargement en cours...";
+	font-family: robotoclassic;
+    background-color: $color-font;
+    width: 250px;
+    height: 50px;
+	position: absolute;
+	left: 5%;
+	top: 150%;
+    }
+    &__sphere{
+        display: block;
+        width: 24px;
+        height: 100%;
+        background: $color-sec;
+        border-radius: $radius50;
+        animation: slide 1.75s infinite ease-in-out alternate;
+    }
+}
+}

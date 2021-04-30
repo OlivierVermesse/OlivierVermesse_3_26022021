@@ -7,7 +7,9 @@
     color: $color-font;
     border-radius: $radius-round;
     border:none;
-    }
+    &:hover{
+        background: linear-gradient($color-sec-dark, $color-prim-dark);
+    }}
 
 .tag_new{
     height: 30px;
