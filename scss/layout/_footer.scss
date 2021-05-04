@@ -3,15 +3,13 @@
         flex-direction: column;
         background-color: $color-bg;
         color:$color-font;
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: $padding-margin-prim 0 $padding-margin-prim $padding-margin-prim;
     
         &__logo{
         color: $color-font;
         font-family: shrikhandregular;
         font-size: 1.3em;
-        padding-bottom: 20px;
+        padding-bottom: $padding-margin-prim;
     }
     &__propose, &__partner, &__mentions, &__contact{
         display: flex;

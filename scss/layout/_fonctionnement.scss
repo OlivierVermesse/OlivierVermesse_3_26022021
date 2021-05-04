@@ -1,21 +1,21 @@
 #fonctionnement{
-    padding-left: 20px;
+    padding-left: $padding-margin-prim;
     &__criteria{
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position:relative;
-    margin-bottom: 20px;    
+    margin-bottom: $padding-margin-prim;    
         &__choice{
             @include fct_choice;
             @include box-shadow;
-            background-color: $color-bg_light;
+            background-color: $color-bg_mid;
         }
         &__menu{
             @include fct_choice;
             @include box-shadow;
-            background-color: $color-bg_light;
+            background-color: $color-bg_mid;
         }
         &__enjoy{
             @include fct_choice;

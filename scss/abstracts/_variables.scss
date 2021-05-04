@@ -13,7 +13,8 @@ $color-ter-dark:darken(#99E2D0,50%);
 //bouton NEW & block Footer
 $color-font:white;
 
-//BG Accueil > block Explore & Fonctionnement
+//BG Accueil > block Explore search & Fonctionnement
+//BG Restaurant pages
 $color-bg_light: lighten($color-bg, 60%);
 $color-select: #E3D2DE;
 
@@ -25,6 +26,9 @@ $radius50: 50%;
 $radius-corner-top: 15px 15px 0 0;
 $radius-corner-bottom: 0 0 15px 15px;
 $radius-corner: 15px 15px 15px 15px;
+
+$padding-margin-prim: 20px;
+$padding-margin-sec: $padding-margin-prim / 2;
 
 //spinner
 $bar-duration:1000ms;

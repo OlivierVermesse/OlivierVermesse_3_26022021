@@ -1,12 +1,21 @@
 .rest_infos{
-    display: flex;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-between;
-    background-color: $color-font;
-    border-radius: $radius-corner-bottom;
-    span{
-        font-family: robotobold;
+    &--home{
+        display: flex;
+        padding: 10px 0 $padding-margin-prim $padding-margin-prim;
+        justify-content: space-between;
+        background-color: $color-font;
+        border-radius: $radius-corner-bottom;
+        
+        span{
+            font-family: robotobold;
+            color: black;
+            }
+        }
+    &--rest{
+        display: flex;
+        padding: $padding-margin-prim / 2  0 $padding-margin-prim / 2 $padding-margin-prim;
+        justify-content: space-between;
+        background-color: $color-bg_mid;;
+        border-radius: $radius-corner-top;
         }
     }

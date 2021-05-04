@@ -1,19 +1,26 @@
 #restaurants{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-left: $padding-margin-prim;
+    padding-bottom: $padding-margin-prim;
     background-color: $color-bg_mid;
     &__palette{
-        @include rest_list;    
+        @include rest_list;   
+        @include box-shadow; 
     }
     &__enchantee{
         @include rest_list;
+        @include box-shadow; 
     }
     &__francaise{
         @include rest_list;
+        @include box-shadow; 
     }
     &__delice{
         @include rest_list;
+        @include box-shadow; 
     }
 }
+
+
+

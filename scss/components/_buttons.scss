@@ -1,12 +1,14 @@
 .btn{
-    height: 30px;
     width: 200px;
+    margin: 15px auto 15px auto;
     margin-top: 15px;
     margin-bottom: 30px;
     background: linear-gradient($color-sec, $color-prim);
     color: $color-font;
     border-radius: $radius-round;
     border:none;
+    text-align: center;
+    line-height: 3;
     &:hover{
         background: linear-gradient($color-sec-dark, $color-prim-dark);
     }}
