@@ -28,7 +28,7 @@ $radius-corner-bottom: 0 0 15px 15px;
 $radius-corner: 15px 15px 15px 15px;
 
 $padding-margin-prim: 20px;
-$padding-margin-sec: $padding-margin-prim / 2;
+$padding-margin-sec: calc( #{$padding-margin-prim} / 2 );
 
 //spinner
 $bar-duration:1000ms;

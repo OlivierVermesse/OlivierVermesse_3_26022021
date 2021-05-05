@@ -13,7 +13,7 @@
         }
     &--rest{
         display: flex;
-        padding: $padding-margin-prim / 2  0 $padding-margin-prim / 2 $padding-margin-prim;
+        padding: $padding-margin-sec  0 $padding-margin-sec $padding-margin-prim;
         justify-content: space-between;
         background-color: $color-bg_mid;;
         border-radius: $radius-corner-top;

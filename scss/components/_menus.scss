@@ -26,14 +26,21 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                height: 250px;
+                height: 300px;
                 margin: 0 $padding-margin-prim 0 $padding-margin-prim;
                 border-radius: $radius-corner;
-                &__1, &__2, &__3{
+                
+                @for $i from 1 to 4 {
+                    &__#{$i} {
                     @include menu_list;
+                    animation: menu .5s;
+                    animation-timing-function: cubic-bezier(0,.02,.54,.53);
+                    animation-fill-mode: both;
+                    transform: scale(0);
+                    animation-delay:  #{$i/3}s;
                     }
                 }
-        
+            }
             }
         }
     }

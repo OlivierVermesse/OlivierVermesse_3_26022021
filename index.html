@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width">
 	<title>Accueil - Ohmyfood</title>
 	<meta name="description" content="personnalisez, commandez et gangnez du temps grâce à vos Restaurants Ohmyfood">
 	<link rel="stylesheet" href="public/css/style.css">
@@ -21,29 +22,29 @@
 		<img src="https://raw.github.com/OlivierVermesse/OlivierVermesse_3_26022021/master/public/img/logo/ohmyfood.svg" alt="logo"/>
 	</header>
 
-	<section id="explore">
-		<div id="explore__search">
+	<section class="explore">
+		<div class="explore__search">
 			<form method="post" action="adresse.php"></form>
 				<div class='explore__search--icon'>
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
 				<input type="search" name="search" id="explore__city" size="20" placeholder="Paris, Belleville"/>
 		</div>
-		<div id="explore__title">
+		<div class="explore__title">
 			<h1>Réservez le menu qui vous convient</h1>
 		</div>
-		<div id="explore__teasing">
+		<div class="explore__teasing">
 			Découvrez des restaurants d'exception, sélectionnés par nos soins.
 		</div>
 		<button type="button" class="btn">Explorer nos restaurants</button>
 	</section>
 
-	<section id="fonctionnement">
-		<div id="fonctionnement__title">
+	<section class="fonctionnement">
+		<div class="fonctionnement__title">
 			<h2>Fonctionnement</h2>
 		</div>
-		<div id=fonctionnement__criteria>
-			<div id="fonctionnement__criteria__choice">
+		<div class=fonctionnement__criteria>
+			<div class="fonctionnement__criteria__choice">
 				<div class="fonctionnement__criteria__choice--number">
 					1
 				</div>
@@ -54,7 +55,7 @@
 					Choisissez un restaurant
 				</div>
 			</div>
-			<div id="fonctionnement__criteria__menu">
+			<div class="fonctionnement__criteria__menu">
 				<div class="fonctionnement__criteria__menu--number">
 					2
 				</div>
@@ -65,7 +66,7 @@
 					Composez votre menu
 				</div>
 			</div>
-			<div id="fonctionnement__criteria__enjoy">
+			<div class="fonctionnement__criteria__enjoy">
 				<div class="fonctionnement__criteria__enjoy--number">
 					3
 				</div>
@@ -79,11 +80,11 @@
 		</div>
 	</section>
 
-	<section id="restaurants">
-		<div id="restaurants__title">
+	<section class="restaurants">
+		<div class="restaurants__title">
 			<h2>Restaurants</h2>
 		</div>
-		<div id="restaurants__palette">
+		<div class="restaurants__palette">
 			<div class="cont__picture--home">
 				<img src="public/img/restaurants/palette.jpg" alt="rest_palette" title="La palette du goût"/>
 				<div class="tag_new">
@@ -100,7 +101,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="restaurants__enchantee">
+		<div class="restaurants__enchantee">
 			<div class="cont__picture--home">
 				<img src="public/img/restaurants/enchantee.jpg" alt="rest_enchantee" title="La note enchantée"/>
 				<div class="tag_new">
@@ -117,7 +118,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="restaurants__francaise">
+		<div class="restaurants__francaise">
 			<div class="cont__picture--home">
 				<img src="public/img/restaurants/francaise.jpg" alt="rest_francaise" title="A la française"/>
 			</div>
@@ -131,7 +132,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="restaurants__delice">
+		<div class="restaurants__delice">
 			<div class="cont__picture--home">
 				<img src="public/img/restaurants/delice.jpg" alt="rest_delice" title="Le délice des sens"/>
 			</div>

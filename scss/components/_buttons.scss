@@ -1,8 +1,8 @@
 .btn{
     width: 200px;
     margin: 15px auto 15px auto;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: $padding-margin-sec;
+    margin-bottom: $padding-margin-prim;
     background: linear-gradient($color-sec, $color-prim);
     color: $color-font;
     border-radius: $radius-round;
