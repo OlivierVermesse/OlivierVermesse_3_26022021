@@ -4,8 +4,10 @@
   "description": "styles ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./scss/main.scss:./public/css/style.css",
+	"prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "overmesse",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
