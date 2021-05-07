@@ -38,15 +38,15 @@
         width: 100%;
         justify-content: space-between;
         position: relative;
+        transition: 1s all ease;
+      
     &:hover{
-        animation: check-anim 0.5s ease-out forwards;
-        + .fa-check-circle{
-            // animation: rotate(360deg);
-            // animation-duration: 5s;
-            color: red;
+        width:77%;
+        .fa-check-circle{
+            transform: rotate(360deg);
+            transition-duration: 1s;
         }
     }
-     
     & span{
         font-weight: bold;
         }
@@ -73,7 +73,6 @@
         width: 20%;
         height: 66px;
         position: absolute;
-        right: -30%;
-        // right: 0;         
+        right: -30%;         
     }   
 }

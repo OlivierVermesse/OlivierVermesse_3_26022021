@@ -21,14 +21,6 @@
     opacity: 1;
   }
 }
-@keyframes check-anim {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 77%;
-  }
-}
 @font-face {
   font-family: "shrikhandregular";
   src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"), url("../font/shrikhand-regular-webfont.woff") format("woff"), url("../font/Shrikhand-Regular.otf") format("otf");
@@ -68,8 +60,12 @@ h2 {
 }
 
 h3 {
+  font-weight: normal;
   font-family: shrikhandregular;
   font-size: 2em;
+}
+h3 span {
+  text-transform: capitalize;
 }
 
 body {
@@ -289,6 +285,7 @@ a {
 }
 
 .fa-check-circle {
+  color: white;
   background-color: #99E2D0;
   margin: 16px 0 16px 0;
 }
@@ -357,6 +354,9 @@ a {
 .rest_infos--home span {
   font-family: robotobold;
   color: black;
+}
+.rest_infos--home span span {
+  text-transform: capitalize;
 }
 .rest_infos--rest {
   display: flex;
@@ -432,19 +432,21 @@ a {
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
-  animation-delay: 0.3333333333s;
+  animation-delay: 0.25s;
 }
 .rest_block__rest_menu__meal__choices__1__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
+  transition: 1s all ease;
 }
 .rest_block__rest_menu__meal__choices__1__infos:hover {
-  animation: check-anim 0.5s ease-out forwards;
+  width: 77%;
 }
-.rest_block__rest_menu__meal__choices__1__infos:hover + .fa-check-circle {
-  color: red;
+.rest_block__rest_menu__meal__choices__1__infos:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 .rest_block__rest_menu__meal__choices__1__infos span {
   font-weight: bold;
@@ -484,19 +486,21 @@ a {
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
-  animation-delay: 0.6666666667s;
+  animation-delay: 0.5s;
 }
 .rest_block__rest_menu__meal__choices__2__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
+  transition: 1s all ease;
 }
 .rest_block__rest_menu__meal__choices__2__infos:hover {
-  animation: check-anim 0.5s ease-out forwards;
+  width: 77%;
 }
-.rest_block__rest_menu__meal__choices__2__infos:hover + .fa-check-circle {
-  color: red;
+.rest_block__rest_menu__meal__choices__2__infos:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 .rest_block__rest_menu__meal__choices__2__infos span {
   font-weight: bold;
@@ -536,19 +540,21 @@ a {
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
-  animation-delay: 1s;
+  animation-delay: 0.75s;
 }
 .rest_block__rest_menu__meal__choices__3__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
+  transition: 1s all ease;
 }
 .rest_block__rest_menu__meal__choices__3__infos:hover {
-  animation: check-anim 0.5s ease-out forwards;
+  width: 77%;
 }
-.rest_block__rest_menu__meal__choices__3__infos:hover + .fa-check-circle {
-  color: red;
+.rest_block__rest_menu__meal__choices__3__infos:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 .rest_block__rest_menu__meal__choices__3__infos span {
   font-weight: bold;
@@ -566,6 +572,60 @@ a {
   padding-right: 20px;
 }
 .rest_block__rest_menu__meal__choices__3__check {
+  border-radius: 0 15px 15px 0;
+  margin-top: -11px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 66px;
+  position: absolute;
+  right: -30%;
+}
+.rest_block__rest_menu__meal__choices__4 {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
+  padding: 10px 0 10px 10px;
+  animation: menu-anim 0.5s;
+  animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 1s;
+}
+.rest_block__rest_menu__meal__choices__4__infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  transition: 1s all ease;
+}
+.rest_block__rest_menu__meal__choices__4__infos:hover {
+  width: 77%;
+}
+.rest_block__rest_menu__meal__choices__4__infos:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.rest_block__rest_menu__meal__choices__4__infos span {
+  font-weight: bold;
+}
+.rest_block__rest_menu__meal__choices__4__infos__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rest_block__rest_menu__meal__choices__4__infos__price {
+  font-weight: bold;
+  width: auto;
+  white-space: nowrap;
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.rest_block__rest_menu__meal__choices__4__check {
   border-radius: 0 15px 15px 0;
   margin-top: -11px;
   background-color: #99E2D0;

@@ -9,6 +9,9 @@
         span{
             font-family: robotobold;
             color: black;
+            span{
+                text-transform: capitalize;
+            }
             }
         }
     &--rest{

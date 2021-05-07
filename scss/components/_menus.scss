@@ -30,20 +30,14 @@
                 margin: 0 $padding-margin-prim 0 $padding-margin-prim;
                 border-radius: $radius-corner;
                 overflow: hidden;
-                @for $i from 1 to 4 {
+                @for $i from 1 to 5 {
                     &__#{$i} {
                     @include menu_list;
                     animation: menu-anim .5s;
                     animation-timing-function: cubic-bezier(0,.02,.54,.53);
                     animation-fill-mode: both;
                     transform: scale(0);
-                    animation-delay:  #{$i/3}s;
-                    &__infos{ 
-                        }
-                    &__desc{               
-                        }
-                    &__check{
-                        }
+                    animation-delay:  #{$i/4}s;
                     }
                 }
             }  
