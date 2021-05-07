@@ -32,14 +32,48 @@
     background-color: $color-font;
     border-radius: $radius-corner;
     @include box-shadow;
-    padding: 10px;    
+    padding: 10px 0 10px 10px;
+    &__infos{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    &:hover{
+        animation: check-anim 0.5s ease-out forwards;
+        + .fa-check-circle{
+            // animation: rotate(360deg);
+            // animation-duration: 5s;
+            color: red;
+        }
+    }
+     
     & span{
         font-weight: bold;
         }
-    &--price{
+    &__desc{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__price{
         font-weight: bold;
-        align-self: flex-end;
         width: auto;
         white-space: nowrap;
+        align-self: flex-end;
+        padding-right: $padding-margin-prim;
         }
     }
+    &__check{
+        border-radius: $radius-corner-right;
+        margin-top: -11px;
+        background-color: $color-ter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 66px;
+        position: absolute;
+        right: -30%;
+        // right: 0;         
+    }   
+}

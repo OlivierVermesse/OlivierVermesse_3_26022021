@@ -11,7 +11,7 @@
     opacity: 0;
   }
 }
-@keyframes menu {
+@keyframes menu-anim {
   0% {
     transform: translateY(20px);
     opacity: 0;
@@ -19,6 +19,14 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes check-anim {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 77%;
   }
 }
 @font-face {
@@ -280,6 +288,11 @@ a {
   left: -15px;
 }
 
+.fa-check-circle {
+  background-color: #99E2D0;
+  margin: 16px 0 16px 0;
+}
+
 .btn {
   width: 200px;
   margin: 15px auto 15px auto;
@@ -294,6 +307,7 @@ a {
 }
 .btn:hover {
   background: linear-gradient(#ff13be, #6023a9);
+  cursor: pointer;
 }
 
 .tag_new {
@@ -405,6 +419,7 @@ a {
   height: 300px;
   margin: 0 20px 0 20px;
   border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
 }
 .rest_block__rest_menu__meal__choices__1 {
   display: flex;
@@ -412,21 +427,51 @@ a {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
-  padding: 10px;
-  animation: menu 0.5s;
+  padding: 10px 0 10px 10px;
+  animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 0.3333333333s;
 }
-.rest_block__rest_menu__meal__choices__1 span {
+.rest_block__rest_menu__meal__choices__1__infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.rest_block__rest_menu__meal__choices__1__infos:hover {
+  animation: check-anim 0.5s ease-out forwards;
+}
+.rest_block__rest_menu__meal__choices__1__infos:hover + .fa-check-circle {
+  color: red;
+}
+.rest_block__rest_menu__meal__choices__1__infos span {
   font-weight: bold;
 }
-.rest_block__rest_menu__meal__choices__1--price {
+.rest_block__rest_menu__meal__choices__1__infos__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rest_block__rest_menu__meal__choices__1__infos__price {
   font-weight: bold;
-  align-self: flex-end;
   width: auto;
   white-space: nowrap;
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.rest_block__rest_menu__meal__choices__1__check {
+  border-radius: 0 15px 15px 0;
+  margin-top: -11px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 66px;
+  position: absolute;
+  right: -30%;
 }
 .rest_block__rest_menu__meal__choices__2 {
   display: flex;
@@ -434,21 +479,51 @@ a {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
-  padding: 10px;
-  animation: menu 0.5s;
+  padding: 10px 0 10px 10px;
+  animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 0.6666666667s;
 }
-.rest_block__rest_menu__meal__choices__2 span {
+.rest_block__rest_menu__meal__choices__2__infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.rest_block__rest_menu__meal__choices__2__infos:hover {
+  animation: check-anim 0.5s ease-out forwards;
+}
+.rest_block__rest_menu__meal__choices__2__infos:hover + .fa-check-circle {
+  color: red;
+}
+.rest_block__rest_menu__meal__choices__2__infos span {
   font-weight: bold;
 }
-.rest_block__rest_menu__meal__choices__2--price {
+.rest_block__rest_menu__meal__choices__2__infos__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rest_block__rest_menu__meal__choices__2__infos__price {
   font-weight: bold;
-  align-self: flex-end;
   width: auto;
   white-space: nowrap;
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.rest_block__rest_menu__meal__choices__2__check {
+  border-radius: 0 15px 15px 0;
+  margin-top: -11px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 66px;
+  position: absolute;
+  right: -30%;
 }
 .rest_block__rest_menu__meal__choices__3 {
   display: flex;
@@ -456,21 +531,51 @@ a {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
-  padding: 10px;
-  animation: menu 0.5s;
+  padding: 10px 0 10px 10px;
+  animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 1s;
 }
-.rest_block__rest_menu__meal__choices__3 span {
+.rest_block__rest_menu__meal__choices__3__infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.rest_block__rest_menu__meal__choices__3__infos:hover {
+  animation: check-anim 0.5s ease-out forwards;
+}
+.rest_block__rest_menu__meal__choices__3__infos:hover + .fa-check-circle {
+  color: red;
+}
+.rest_block__rest_menu__meal__choices__3__infos span {
   font-weight: bold;
 }
-.rest_block__rest_menu__meal__choices__3--price {
+.rest_block__rest_menu__meal__choices__3__infos__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rest_block__rest_menu__meal__choices__3__infos__price {
   font-weight: bold;
-  align-self: flex-end;
   width: auto;
   white-space: nowrap;
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.rest_block__rest_menu__meal__choices__3__check {
+  border-radius: 0 15px 15px 0;
+  margin-top: -11px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 66px;
+  position: absolute;
+  right: -30%;
 }
 
 /*# sourceMappingURL=style.css.map */

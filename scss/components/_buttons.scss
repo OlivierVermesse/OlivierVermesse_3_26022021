@@ -11,6 +11,7 @@
     line-height: 3;
     &:hover{
         background: linear-gradient($color-sec-dark, $color-prim-dark);
+        cursor: pointer;
     }}
 
 .tag_new{
