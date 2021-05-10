@@ -76,11 +76,13 @@
     }
     & span{
         font-weight: bold;
+        font-size: 1.2em;
         }
     &__desc{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        font-size: 0.8em;
     }
     &__price{
         font-weight: bold;
@@ -98,9 +100,12 @@
         justify-content: center;
         align-items: center;
         width: 20%;
-        height: 66px;
+        height: 60px;
         position: absolute;
-        right: -30%;         
+        right: -30%;
+        // @include laptop{
+        //     height: 60px;
+        // }          
     }   
 }
 
