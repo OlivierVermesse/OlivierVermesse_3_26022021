@@ -4,21 +4,29 @@
     padding-left: $padding-margin-prim;
     padding-bottom: $padding-margin-prim;
     background-color: $color-bg_mid;
-    &__palette{
-        @include rest_list;   
-        @include box-shadow; 
-    }
-    &__enchantee{
-        @include rest_list;
-        @include box-shadow; 
-    }
-    &__francaise{
-        @include rest_list;
-        @include box-shadow; 
-    }
-    &__delice{
-        @include rest_list;
-        @include box-shadow; 
+    &__list{
+        @include laptop{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__palette{
+            @include rest_list;   
+            @include box-shadow; 
+        }
+        &__enchantee{
+            @include rest_list;
+            @include box-shadow; 
+        }
+        &__francaise{
+            @include rest_list;
+            @include box-shadow; 
+        }
+        &__delice{
+            @include rest_list;
+            @include box-shadow; 
+        }
     }
 }
 

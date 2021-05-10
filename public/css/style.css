@@ -93,11 +93,22 @@ header {
   color: white;
   padding: 20px 0 20px 20px;
 }
+@media all and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .footer__logo {
   color: white;
   font-family: shrikhandregular;
   font-size: 1.3em;
   padding-bottom: 20px;
+}
+@media all and (min-width: 1024px) {
+  .footer__logo {
+    padding-top: 20px;
+  }
 }
 .footer__propose, .footer__partner, .footer__mentions, .footer__contact {
   display: flex;
@@ -152,10 +163,18 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   margin-bottom: 20px;
 }
+@media all and (min-width: 1024px) {
+  .fonctionnement__criteria {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 0;
+  }
+}
 .fonctionnement__criteria__choice {
+  position: relative;
   display: flex;
   height: 50px;
   margin-right: 20px;
@@ -164,8 +183,14 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   background-color: #f0f0f0;
+}
+@media all and (min-width: 1024px) {
+  .fonctionnement__criteria__choice {
+    width: 250px;
+  }
 }
 .fonctionnement__criteria__menu {
+  position: relative;
   display: flex;
   height: 50px;
   margin-right: 20px;
@@ -175,7 +200,13 @@ a {
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   background-color: #f0f0f0;
 }
+@media all and (min-width: 1024px) {
+  .fonctionnement__criteria__menu {
+    width: 250px;
+  }
+}
 .fonctionnement__criteria__enjoy {
+  position: relative;
   display: flex;
   height: 50px;
   margin-right: 20px;
@@ -185,6 +216,11 @@ a {
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   background-color: #E3D2DE;
 }
+@media all and (min-width: 1024px) {
+  .fonctionnement__criteria__enjoy {
+    width: 250px;
+  }
+}
 
 .restaurants {
   display: flex;
@@ -193,7 +229,15 @@ a {
   padding-bottom: 20px;
   background-color: #f0f0f0;
 }
-.restaurants__palette {
+@media all and (min-width: 1024px) {
+  .restaurants__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.restaurants__list__palette {
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -201,7 +245,12 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
-.restaurants__enchantee {
+@media all and (min-width: 1024px) {
+  .restaurants__list__palette {
+    width: 45%;
+  }
+}
+.restaurants__list__enchantee {
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -209,7 +258,12 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
-.restaurants__francaise {
+@media all and (min-width: 1024px) {
+  .restaurants__list__enchantee {
+    width: 45%;
+  }
+}
+.restaurants__list__francaise {
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -217,13 +271,23 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
-.restaurants__delice {
+@media all and (min-width: 1024px) {
+  .restaurants__list__francaise {
+    width: 45%;
+  }
+}
+.restaurants__list__delice {
   display: flex;
   flex-direction: column;
   height: 250px;
   margin: 0 20px 20px 0;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
+}
+@media all and (min-width: 1024px) {
+  .restaurants__list__delice {
+    width: 45%;
+  }
 }
 
 .spinner-block__bar {

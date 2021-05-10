@@ -1,3 +1,24 @@
+@mixin mobile-port{
+    @media all and (max-width:map-get($breakpoints, mobile) and (orientation:portrait)){
+        @content;
+    }
+}
+@mixin mobile-land{
+    @media all and (max-width:map-get($breakpoints, mobile) and (orientation:landscape)){
+        @content;
+    }
+}
+// @mixin tablet{
+//     @media all and (min-width:map-get($breakpoints, tablet-min) and max-width:map-get($breakpoints, tablet-max)){
+//         @content;
+//     }
+// }
+@mixin laptop{
+    @media all and (min-width:map-get($breakpoints, laptop)){
+        @content;
+    }
+}
+
 @mixin box-shadow{
     box-shadow: 3px 3px $color-bg_light, -3px 0px $color-bg_light;
     }
@@ -9,6 +30,9 @@
     align-items: center;
     font-family: robotobold;
     border-radius: $radius-corner;
+    @include laptop{
+        width: 250px;
+    } 
     }
 
 @mixin rest_list{
@@ -17,6 +41,9 @@
     height: 250px;
     margin: 0 $padding-margin-prim $padding-margin-prim 0;
     border-radius: $radius-corner;
+    @include laptop{
+        width: 45%;
+    }   
     }
 
 @mixin img{
@@ -76,3 +103,4 @@
         right: -30%;         
     }   
 }
+
