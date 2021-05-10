@@ -37,7 +37,7 @@
                     border-radius: $radius-corner;
                     overflow: hidden;
                     @include laptop{
-                        width: 350px;
+                        width: 300px;
                     } 
                     @for $i from 1 to 5 {
                         &__#{$i} {

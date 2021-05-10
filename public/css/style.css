@@ -237,6 +237,14 @@ a {
     justify-content: space-around;
   }
 }
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .restaurants__list__palette {
   display: flex;
   flex-direction: column;
@@ -246,6 +254,11 @@ a {
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
 @media all and (min-width: 1024px) {
+  .restaurants__list__palette {
+    width: 45%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .restaurants__list__palette {
     width: 45%;
   }
@@ -263,6 +276,11 @@ a {
     width: 45%;
   }
 }
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants__list__enchantee {
+    width: 45%;
+  }
+}
 .restaurants__list__francaise {
   display: flex;
   flex-direction: column;
@@ -276,6 +294,11 @@ a {
     width: 45%;
   }
 }
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants__list__francaise {
+    width: 45%;
+  }
+}
 .restaurants__list__delice {
   display: flex;
   flex-direction: column;
@@ -285,6 +308,11 @@ a {
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
 @media all and (min-width: 1024px) {
+  .restaurants__list__delice {
+    width: 45%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .restaurants__list__delice {
     width: 45%;
   }
@@ -494,7 +522,7 @@ a {
 }
 @media all and (min-width: 1024px) {
   .rest_block__rest_menu__type__meal__choices {
-    width: 350px;
+    width: 300px;
   }
 }
 .rest_block__rest_menu__type__meal__choices__1 {

@@ -11,6 +11,12 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         &__palette{
             @include rest_list;   
             @include box-shadow; 
