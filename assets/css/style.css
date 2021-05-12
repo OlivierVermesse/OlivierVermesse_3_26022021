@@ -476,34 +476,31 @@ a {
   flex-direction: column;
   background-color: #f0f0f0;
 }
-.rest_block__rest_menu {
-  position: relative;
-  top: -50px;
-  margin-bottom: -50px;
-  border-radius: 15px 15px 0 0;
-}
-.rest_block__rest_menu__title {
-  border-radius: 15px 15px 0 0;
-}
 @media all and (min-width: 1024px) {
-  .rest_block__rest_menu__type {
+  .rest_block {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 }
-.rest_block__rest_menu__type__meal__title {
+.rest_block__name_tag {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  border-radius: 15px 15px 0 0;
+}
+.rest_block__title {
   text-transform: uppercase;
   padding-left: 20px;
 }
-.rest_block__rest_menu__type__meal__title__barre {
+.rest_block__barre {
   height: 3px;
   background-color: #99E2D0;
-  width: 10%;
+  width: 15%;
   margin-left: 20px;
   margin-top: 10px;
 }
-.rest_block__rest_menu__type__meal__choices {
+.rest_block__choices {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -513,55 +510,55 @@ a {
   overflow: hidden;
 }
 @media all and (min-width: 1024px) {
-  .rest_block__rest_menu__type__meal__choices {
+  .rest_block__choices {
     width: 300px;
   }
 }
-.rest_block__rest_menu__type__meal__choices__1 {
+.rest_block__choices__1 {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   padding: 10px 0 10px 10px;
+  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 0.25s;
 }
-.rest_block__rest_menu__type__meal__choices__1__infos {
+.rest_block__choices__1__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
   transition: 1s all ease;
 }
-.rest_block__rest_menu__type__meal__choices__1__infos:hover {
+.rest_block__choices__1__infos:hover {
   width: 77%;
 }
-.rest_block__rest_menu__type__meal__choices__1__infos:hover .fa-check-circle {
+.rest_block__choices__1__infos:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
-.rest_block__rest_menu__type__meal__choices__1__infos span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.rest_block__rest_menu__type__meal__choices__1__infos__desc {
+.rest_block__choices__1__desc {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.8em;
 }
-.rest_block__rest_menu__type__meal__choices__1__infos__price {
+.rest_block__choices__1__desc span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.rest_block__choices__1__price {
   font-weight: bold;
   width: auto;
   white-space: nowrap;
   align-self: flex-end;
   padding-right: 20px;
 }
-.rest_block__rest_menu__type__meal__choices__1__check {
+.rest_block__choices__1__check {
   border-radius: 0 15px 15px 0;
   margin-top: -11px;
   background-color: #99E2D0;
@@ -573,51 +570,51 @@ a {
   position: absolute;
   right: -30%;
 }
-.rest_block__rest_menu__type__meal__choices__2 {
+.rest_block__choices__2 {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   padding: 10px 0 10px 10px;
+  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 0.5s;
 }
-.rest_block__rest_menu__type__meal__choices__2__infos {
+.rest_block__choices__2__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
   transition: 1s all ease;
 }
-.rest_block__rest_menu__type__meal__choices__2__infos:hover {
+.rest_block__choices__2__infos:hover {
   width: 77%;
 }
-.rest_block__rest_menu__type__meal__choices__2__infos:hover .fa-check-circle {
+.rest_block__choices__2__infos:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
-.rest_block__rest_menu__type__meal__choices__2__infos span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.rest_block__rest_menu__type__meal__choices__2__infos__desc {
+.rest_block__choices__2__desc {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.8em;
 }
-.rest_block__rest_menu__type__meal__choices__2__infos__price {
+.rest_block__choices__2__desc span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.rest_block__choices__2__price {
   font-weight: bold;
   width: auto;
   white-space: nowrap;
   align-self: flex-end;
   padding-right: 20px;
 }
-.rest_block__rest_menu__type__meal__choices__2__check {
+.rest_block__choices__2__check {
   border-radius: 0 15px 15px 0;
   margin-top: -11px;
   background-color: #99E2D0;
@@ -629,51 +626,51 @@ a {
   position: absolute;
   right: -30%;
 }
-.rest_block__rest_menu__type__meal__choices__3 {
+.rest_block__choices__3 {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   padding: 10px 0 10px 10px;
+  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 0.75s;
 }
-.rest_block__rest_menu__type__meal__choices__3__infos {
+.rest_block__choices__3__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
   transition: 1s all ease;
 }
-.rest_block__rest_menu__type__meal__choices__3__infos:hover {
+.rest_block__choices__3__infos:hover {
   width: 77%;
 }
-.rest_block__rest_menu__type__meal__choices__3__infos:hover .fa-check-circle {
+.rest_block__choices__3__infos:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
-.rest_block__rest_menu__type__meal__choices__3__infos span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.rest_block__rest_menu__type__meal__choices__3__infos__desc {
+.rest_block__choices__3__desc {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.8em;
 }
-.rest_block__rest_menu__type__meal__choices__3__infos__price {
+.rest_block__choices__3__desc span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.rest_block__choices__3__price {
   font-weight: bold;
   width: auto;
   white-space: nowrap;
   align-self: flex-end;
   padding-right: 20px;
 }
-.rest_block__rest_menu__type__meal__choices__3__check {
+.rest_block__choices__3__check {
   border-radius: 0 15px 15px 0;
   margin-top: -11px;
   background-color: #99E2D0;
@@ -685,51 +682,51 @@ a {
   position: absolute;
   right: -30%;
 }
-.rest_block__rest_menu__type__meal__choices__4 {
+.rest_block__choices__4 {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   padding: 10px 0 10px 10px;
+  box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
   animation: menu-anim 0.5s;
   animation-timing-function: cubic-bezier(0, 0.02, 0.54, 0.53);
   animation-fill-mode: both;
   transform: scale(0);
   animation-delay: 1s;
 }
-.rest_block__rest_menu__type__meal__choices__4__infos {
+.rest_block__choices__4__infos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: relative;
   transition: 1s all ease;
 }
-.rest_block__rest_menu__type__meal__choices__4__infos:hover {
+.rest_block__choices__4__infos:hover {
   width: 77%;
 }
-.rest_block__rest_menu__type__meal__choices__4__infos:hover .fa-check-circle {
+.rest_block__choices__4__infos:hover .fa-check-circle {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
-.rest_block__rest_menu__type__meal__choices__4__infos span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.rest_block__rest_menu__type__meal__choices__4__infos__desc {
+.rest_block__choices__4__desc {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.8em;
 }
-.rest_block__rest_menu__type__meal__choices__4__infos__price {
+.rest_block__choices__4__desc span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.rest_block__choices__4__price {
   font-weight: bold;
   width: auto;
   white-space: nowrap;
   align-self: flex-end;
   padding-right: 20px;
 }
-.rest_block__rest_menu__type__meal__choices__4__check {
+.rest_block__choices__4__check {
   border-radius: 0 15px 15px 0;
   margin-top: -11px;
   background-color: #99E2D0;

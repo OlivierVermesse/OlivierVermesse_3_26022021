@@ -66,31 +66,31 @@
     justify-content: space-between;
     background-color: $color-font;
     border-radius: $radius-corner;
-    @include box-shadow;
     padding: 10px 0 10px 10px;
+    @include box-shadow;
     &__infos{
         display: flex;
         width: 100%;
         justify-content: space-between;
         position: relative;
         transition: 1s all ease;
-      
-    &:hover{
-        width:77%;
-        .fa-check-circle{
-            transform: rotate(360deg);
-            transition-duration: 1s;
+        &:hover{
+            width:77%;
+            .fa-check-circle{
+                transform: rotate(360deg);
+                transition-duration: 1s;
+            }
         }
     }
-    & span{
-        font-weight: bold;
-        font-size: 1.2em;
-        }
     &__desc{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
         font-size: 0.8em;
+        & span{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
     }
     &__price{
         font-weight: bold;
@@ -98,7 +98,6 @@
         white-space: nowrap;
         align-self: flex-end;
         padding-right: $padding-margin-prim;
-        }
     }
     &__check{
         border-radius: $radius-corner-right;

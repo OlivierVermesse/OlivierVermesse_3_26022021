@@ -2,56 +2,51 @@
     display: flex;
     flex-direction: column;
     background-color: $color-bg_mid;
-    &__rest_menu{
+    @include laptop{
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    &__name_tag{
         position: relative;
         top: -50px;
-        margin-bottom: -50px;;
+        margin-bottom: -50px;
         border-radius: $radius-corner-top;
-        &__title{
-            border-radius: $radius-corner-top;
-            }
-        &__type{
-            @include laptop{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }   
-            &__meal{
-                &__title{
-                    text-transform: uppercase;
-                    padding-left: $padding-margin-prim;            
-                    &__barre{
-                        height:3px;
-                        background-color:$color-ter;
-                        width:10%;
-                        margin-left: $padding-margin-prim;
-                        margin-top: 10px;      
-                        }
-                    }
-                &__choices{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    height: 300px;
-                    margin: 0 $padding-margin-prim 0 $padding-margin-prim;
-                    border-radius: $radius-corner;
-                    overflow: hidden;
-                    @include laptop{
-                        width: 300px;
-                    } 
-                    @for $i from 1 to 5 {
-                        &__#{$i} {
-                        @include menu_list;
-                        animation: menu-anim .5s;
-                        animation-timing-function: cubic-bezier(0,.02,.54,.53);
-                        animation-fill-mode: both;
-                        transform: scale(0);
-                        animation-delay:  #{$i/4}s;
-                        }
-                    }
-                    
-                }  
+    }
+    &__title{
+        text-transform: uppercase;
+        padding-left: $padding-margin-prim;
+    }            
+    &__barre{
+        height:3px;
+        background-color:$color-ter;
+        width:15%;
+        margin-left: $padding-margin-prim;
+        margin-top: 10px;      
+        }
+    &__choices{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        margin: 0 $padding-margin-prim 0 $padding-margin-prim;
+        border-radius: $radius-corner;
+        overflow: hidden;
+        @include laptop{
+            width: 300px;
+        }
+        @for $i from 1 to 5 {
+            &__#{$i} {
+            @include menu_list;
+            animation: menu-anim .5s;
+            animation-timing-function: cubic-bezier(0,.02,.54,.53);
+            animation-fill-mode: both;
+            transform: scale(0);
+            animation-delay:  #{$i/4}s;
             }
         }
     }
+    
+    
 }
