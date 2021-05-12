@@ -39,6 +39,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "robotobold";
+  src: url("../font/roboto-bold-webfont.woff2") format("woff2"), url("../font/roboto-bold-webfont.woff") format("woff"), url("../font/Roboto-bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 h1 {
   font-size: 1.5em;
   font-family: robotobold;
@@ -430,7 +436,7 @@ a {
   border-radius: 0 0 15px 15px;
 }
 .rest_infos--home span {
-  font-family: robotobold;
+  font-family: robotoblack;
   color: black;
 }
 .rest_infos--home span span {
