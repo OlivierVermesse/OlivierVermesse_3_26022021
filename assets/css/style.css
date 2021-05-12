@@ -39,12 +39,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "robotobold";
-  src: url("../font/roboto-bold-webfont.woff2") format("woff2"), url("../font/roboto-bold-webfont.woff") format("woff"), url("../font/Roboto-bold.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 h1 {
   font-size: 1.5em;
   font-family: robotobold;
@@ -229,15 +223,7 @@ a {
   padding-bottom: 20px;
   background-color: #f0f0f0;
 }
-@media all and (min-width: 1024px) {
-  .restaurants__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 768px) {
   .restaurants__list {
     display: flex;
     flex-direction: row;
@@ -318,7 +304,7 @@ a {
   }
 }
 
-.spinner-block__bar {
+.spinner_block__bar {
   font-size: 20px;
   width: 250px;
   height: 25px;
@@ -331,7 +317,7 @@ a {
   opacity: 0;
   animation: 5s loss 1;
 }
-.spinner-block__bar :after {
+.spinner_block__bar :after {
   content: "Chargement en cours...";
   font-family: robotoclassic;
   background-color: white;
@@ -341,7 +327,7 @@ a {
   left: 5%;
   top: 150%;
 }
-.spinner-block__bar__sphere {
+.spinner_block__bar--sphere {
   display: block;
   width: 24px;
   height: 100%;

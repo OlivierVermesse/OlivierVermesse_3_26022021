@@ -2,13 +2,9 @@
 @import "./abstracts/mixins";
 @import "./abstracts/keyframes";
 @import "./abstracts/maps";
-// @import "./utils/functions";
-// @import "./utils/extensions";
 
-// @import "./base/base";
 @import "./base/typography";
 @import "./base/page-style";
-
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -25,9 +21,3 @@
 @import "./components/rest_infos";
 @import "./components/tag_like";
 @import "./components/menus";
-
-// @import "./pages/home";
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
-

@@ -1,4 +1,4 @@
-.spinner-block{
+.spinner_block{
     &__bar{
 	font-size: 20px;
 	width: 250px;
@@ -21,7 +21,7 @@
 	left: 5%;
 	top: 150%;
     }
-    &__sphere{
+    &--sphere{
         display: block;
         width: 24px;
         height: 100%;
