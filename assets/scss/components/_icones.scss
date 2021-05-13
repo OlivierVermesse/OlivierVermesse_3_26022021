@@ -1,3 +1,10 @@
+.fa-arrow-left{
+    color: black;
+    float: left;
+    margin-left: $padding-margin-prim;
+    margin-top: 8px;
+ }
+
 .explore__search,.footer__propose, .footer__partner{
     &--icon{
         margin-right: $padding-margin-prim;

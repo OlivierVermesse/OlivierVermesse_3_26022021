@@ -5,7 +5,6 @@
     @include laptop{
         display: flex;
         flex-direction: row;
-        // flex-wrap: wrap;
         justify-content: space-around;
         }
     &__name_tag{
@@ -36,17 +35,59 @@
         @include laptop{
             width: 300px;
         }
-        @for $i from 1 to 5 {
-            &__#{$i} {
-            @include menu_list;
-            animation: menu-anim .5s;
-            animation-timing-function: cubic-bezier(0,.02,.54,.53);
-            animation-fill-mode: both;
-            transform: scale(0);
-            animation-delay:  #{$i/4}s;
+    }
+    @for $i from 1 to 5 {
+        &__select#{$i} {
+        @include menu_list;
+        animation: menu-anim .5s;
+        animation-timing-function: cubic-bezier(0,.02,.54,.53);
+        animation-fill-mode: both;
+        transform: scale(0);
+        animation-delay:  #{$i/4}s;
+        }
+    }
+
+    &__infos{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        transition: 1s all ease;
+        &:hover{
+            width:77%;
+            .fa-check-circle{
+                transform: rotate(360deg);
+                transition-duration: 1s;
             }
         }
     }
-    
-    
+    &__desc{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0.8em;
+        & span{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+    &__price{
+        font-weight: bold;
+        width: auto;
+        white-space: nowrap;
+        align-self: flex-end;
+        padding-right: $padding-margin-prim;
+    }
+    &__check{
+        border-radius: $radius-corner-right;
+        margin-top: -11px;
+        background-color: $color-ter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 60px;
+        position: absolute;
+        right: -30%;        
+    }   
 }

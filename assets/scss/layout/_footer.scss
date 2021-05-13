@@ -4,7 +4,7 @@
         background-color: $color-bg;
         color:$color-font;
         padding: $padding-margin-prim 0 $padding-margin-prim $padding-margin-prim;
-        @include laptop{
+        @include tablet-laptop{
             flex-direction: row;
             justify-content: space-around;
         }    
@@ -14,7 +14,7 @@
         font-family: shrikhandregular;
         font-size: 1.3em;
         padding-bottom: $padding-margin-prim;
-        @include laptop{
+        @include tablet-laptop{
             padding-top:$padding-margin-prim;
         }   
     }
