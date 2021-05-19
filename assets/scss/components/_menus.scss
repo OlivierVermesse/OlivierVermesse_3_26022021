@@ -7,11 +7,8 @@
         flex-direction: row;
         justify-content: space-around;
         }
-    &__name_tag{
-        position: relative;
-        top: -50px;
-        margin-bottom: -50px;
-        border-radius: $radius-corner-top;
+    & h2{
+        display: none;
     }
     &__title{
         text-transform: uppercase;
