@@ -1,5 +1,5 @@
-.cont_picture{
-    &--home{
+.picture{
+    &_home{
         width: 100%;
         height: 70%;
         position: relative;
@@ -8,7 +8,7 @@
             border-radius: $radius-corner-top;
         }
     }
-    &--rest{
+    &_rest{
         width: 100%;
         height: 250px;
         position: relative;
