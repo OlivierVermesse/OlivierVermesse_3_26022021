@@ -46,9 +46,13 @@
     height: 250px;
     margin: 0 $padding-margin-prim $padding-margin-prim 0;
     border-radius: $radius-corner;
+    & a{
+        height: 100%;
+    }
     @include tablet-laptop{
         width: 45%;
     } 
+    
 }
 
 @mixin img{

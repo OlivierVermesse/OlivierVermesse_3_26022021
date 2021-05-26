@@ -246,6 +246,9 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
+.restaurants__palette a {
+  height: 100%;
+}
 @media all and (min-width: 768px) {
   .restaurants__palette {
     width: 45%;
@@ -258,6 +261,9 @@ a {
   margin: 0 20px 20px 0;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
+}
+.restaurants__enchantee a {
+  height: 100%;
 }
 @media all and (min-width: 768px) {
   .restaurants__enchantee {
@@ -272,6 +278,9 @@ a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
 }
+.restaurants__francaise a {
+  height: 100%;
+}
 @media all and (min-width: 768px) {
   .restaurants__francaise {
     width: 45%;
@@ -284,6 +293,9 @@ a {
   margin: 0 20px 20px 0;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px #e3e3e3, -3px 0px #e3e3e3;
+}
+.restaurants__delice a {
+  height: 100%;
 }
 @media all and (min-width: 768px) {
   .restaurants__delice {
@@ -302,7 +314,7 @@ a {
   position: relative;
   background-color: white;
   opacity: 0;
-  animation: 7s loss 1;
+  animation: 5s loss 1;
 }
 .spinner_block__bar :after {
   content: "Chargement en cours...";
@@ -324,7 +336,7 @@ a {
 }
 
 .header, .explore, .fonctionnement, .restaurants, .footer {
-  animation: 7s home-info 1;
+  animation: 5s home-info 1;
 }
 
 .fa-arrow-left {
