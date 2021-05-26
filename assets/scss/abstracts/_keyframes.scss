@@ -12,6 +12,16 @@
 	}
 }
 
+//home informations opacity with spinner
+@keyframes home-info {
+	0%, 80%
+		{opacity:0.1;
+	}
+	100%
+		{opacity:1;
+	}
+}
+
 //menus view
 @keyframes menu-anim{
 	0% {

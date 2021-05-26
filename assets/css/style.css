@@ -11,6 +11,14 @@
     opacity: 0;
   }
 }
+@keyframes home-info {
+  0%, 80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes menu-anim {
   0% {
     transform: translateY(20px);
@@ -294,7 +302,7 @@ a {
   position: relative;
   background-color: white;
   opacity: 0;
-  animation: 5s loss 1;
+  animation: 7s loss 1;
 }
 .spinner_block__bar :after {
   content: "Chargement en cours...";
@@ -313,6 +321,10 @@ a {
   background: #FF79DA;
   border-radius: 50%;
   animation: slide 1.75s infinite ease-in-out alternate;
+}
+
+.header, .explore, .fonctionnement, .restaurants, .footer {
+  animation: 7s home-info 1;
 }
 
 .fa-arrow-left {
