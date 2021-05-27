@@ -4,6 +4,7 @@
     padding-left: $padding-margin-prim;
     padding-bottom: $padding-margin-prim;
     background-color: $color-bg_mid;
+    
     &__list{
         @include tablet-laptop{
             display: flex;
@@ -14,7 +15,7 @@
     }      
     &__palette{
         @include rest_list;   
-        @include box-shadow; 
+        @include box-shadow;
     }
     &__enchantee{
         @include rest_list;

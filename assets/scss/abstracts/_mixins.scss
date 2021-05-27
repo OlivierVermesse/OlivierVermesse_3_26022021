@@ -41,6 +41,7 @@
 }
 
 @mixin rest_list{
+    animation: 5s home-noclick 1 ;
     display: flex;
     flex-direction: column;
     height: 250px;

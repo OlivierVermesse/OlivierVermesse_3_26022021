@@ -10,7 +10,7 @@
 	position: relative;
 	background-color: $color-font;
     opacity:0;
-    animation: 5s loss 1 ;
+    animation: 5s loss 1;
     :after{
     content: "Chargement en cours...";
 	font-family: robotoclassic;
@@ -20,7 +20,7 @@
 	position: absolute;
 	left: 5%;
 	top: 150%;
-    }
+        }
     &--sphere{
         display: block;
         width: 24px;
@@ -28,6 +28,6 @@
         background: $color-sec;
         border-radius: $radius50;
         animation: slide 1.75s infinite ease-in-out alternate;
+        }
     }
-}
 }

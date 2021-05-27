@@ -22,6 +22,16 @@
 	}
 }
 
+//home informations opacity with spinner
+@keyframes home-noclick {
+	0%, 80%
+		{z-index:-99;
+	}
+	100%
+		{z-index:0;
+	}
+}
+
 //menus view
 @keyframes menu-anim{
 	0% {

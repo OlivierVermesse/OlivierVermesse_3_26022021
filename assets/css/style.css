@@ -19,6 +19,14 @@
     opacity: 1;
   }
 }
+@keyframes home-noclick {
+  0%, 80% {
+    z-index: -99;
+  }
+  100% {
+    z-index: 0;
+  }
+}
 @keyframes menu-anim {
   0% {
     transform: translateY(20px);
@@ -239,6 +247,7 @@ a {
   }
 }
 .restaurants__palette {
+  animation: 5s home-noclick 1;
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -255,6 +264,7 @@ a {
   }
 }
 .restaurants__enchantee {
+  animation: 5s home-noclick 1;
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -271,6 +281,7 @@ a {
   }
 }
 .restaurants__francaise {
+  animation: 5s home-noclick 1;
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -287,6 +298,7 @@ a {
   }
 }
 .restaurants__delice {
+  animation: 5s home-noclick 1;
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -335,7 +347,7 @@ a {
   animation: slide 1.75s infinite ease-in-out alternate;
 }
 
-.header, .explore, .fonctionnement, .restaurants, .footer {
+header, .explore, .fonctionnement, .restaurants, footer {
   animation: 5s home-info 1;
 }
 
