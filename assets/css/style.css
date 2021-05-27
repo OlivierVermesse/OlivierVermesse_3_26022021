@@ -347,7 +347,7 @@ a {
   animation: slide 1.75s infinite ease-in-out alternate;
 }
 
-header, .explore, .fonctionnement, .restaurants, footer {
+.explore, .fonctionnement, .restaurants {
   animation: 5s home-info 1;
 }
 
